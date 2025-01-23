@@ -1,0 +1,44 @@
+/* Ensure the body takes full height and uses a centered layout */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevents scrollbars from showing when the circle moves */
+    flex-direction: column; /* Stack timer and points vertically */
+    gap: 20px; /* Adds space between elements */
+  }
+  
+  /* Flex container for status elements (timer and points) */
+  #status {
+    display: flex;
+    gap: 20px; /* Adds space between timer and points */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the status elements */
+  }
+  
+  /* Style for the timer and points display */
+  #timer, #points {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  /* Style for the circle */
+  #circle {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute; /* Allows us to move it around */
+    cursor: pointer; /* Adds a pointer cursor on hover to indicate it's clickable */
+  }
+  
