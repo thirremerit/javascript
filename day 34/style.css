@@ -1,0 +1,18 @@
+.slide{
+    width: 100%;
+
+}
+.prev, .next{
+    cursor:pointer ;
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+}
+
+.prev:hover , .next:hover{
+    background-color: black;
+}
+
+.next {
+    right: 0;
+}
